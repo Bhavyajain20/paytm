@@ -1,0 +1,706 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body{
+    /*background-color: rgb(244, 241, 241);*/
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    color: black;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+}
+.contain {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+.header{
+    background-color: white;
+    height: 92px ;
+    width: 100%;
+    box-shadow: 0px 5px 20px rgba(0, 41, 112, .1);
+    align-items: center;
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    z-index: 9;
+}
+.inner-header{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 92px;
+}
+.logo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-right: 9px;
+}
+.logo img{
+    width: 180px;
+    align-items: center;
+
+}
+.navigation{
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    margin: auto;
+    padding: 0px;
+    
+}
+.alpha li a{
+    text-decoration: none;
+    color: black;
+}
+.alpha li{
+    margin-right:20px;
+
+}
+.navigation ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 16px;
+    font-weight:bold;
+    padding: 0px;
+    font-weight:lighter;
+}
+.signin{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: rgba(0, 195, 255, 0.678);
+    color: white;
+    font-size: 15px;
+    padding: 2px 2px 2px 10px;
+    border-radius: 20px;
+    font-weight: 600;
+}
+.signin img{
+    margin-left: 10px;
+
+}
+.header-bottom{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 94px;
+    background-color: rgb(246, 245, 245);
+}
+.navbar span{
+    font-weight: 200;
+}
+.navbar .icon{
+    font-size: 25px;
+}
+.banner{
+    background-color: white;
+    width: 100%;
+    height: 700px;
+    box-shadow: 0px 5px 20px rgba(0, 41, 112, .1);
+}
+.left-side{
+    width: 650px;
+    position: absolute;
+    top: 250px;
+    margin-left: 40px;
+}
+.paytm-logo img{
+    height: 80px;
+    box-shadow: 0px 5px 20px rgba(0, 41, 112, .1);
+    border-radius: 16px;
+    width: 80px;
+    top: 250px;
+    margin-bottom: 30px;
+}
+.left-side h1{
+    font-size: 54px;
+    font-weight: 700;
+    line-height: 65px;
+    margin-bottom: 20px;
+}
+.left-side p{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    width:450px;
+    margin-bottom: 20px;
+}
+.download-button{
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+    padding: 0 24px;
+    height: 44px;
+    width: 300px;
+}
+.download-button button{
+    width: 300px;
+    height: 44px;
+    border-radius: 20px;
+    color: white;
+    background-color: black;
+    font-size: 16px;
+    margin-left: -20px;
+}
+.right-side img{
+    position: absolute;
+    right: 0;
+    height: 500px;
+    top: 250px;
+}
+.middle-banner{
+    background-color: rgb(6, 161, 222);
+    height: 400px;
+}
+.inner-banner{
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto; 
+    padding: 65px;
+}
+.recharge-pay {
+    font-size: 36px;
+    color: #fff;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.sub-banner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.sub-banner img{
+    height: 80px;
+}
+.sub-banner a:hover{
+    background-color: rgb(34, 170, 200);
+    border-radius: 20px;
+}
+.recharge-box a{
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    height: 180px;
+    padding: 14px 16px;
+}
+.recharge-box{
+    width: 180px;
+    margin-right: 32px;
+    border-radius: 12px;
+    padding: 16px 11px 16px 16px;
+    justify-content: space-between;
+    font-size: 17px;
+    color: #fff;
+    font-weight: 500;
+    line-height: 25px;
+}
+.lower-banner{
+    background-color: rgba(10, 10, 92, 0.906);
+    height: 400px;
+}
+.book-buy {
+    font-size: 36px;
+    color: #fff;
+    font-weight: 700;
+    display: flex;
+    align-items: center; 
+    margin-bottom: 40px;
+}
+.buy-on-box{
+    width: 140px;
+    margin-right: 32px;
+    border-radius: 12px;
+    padding: 16px 11px 16px 16px;
+    justify-content: space-between;
+    font-size: 17px;
+    color: #fff;
+    font-weight: 500;
+    line-height: 25px;   
+}
+.buy-on-box a{
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    height: 180px;
+    padding: 14px 16px;   
+}
+.buy-on-box a:hover{
+    background-color: rgb(25, 25, 92);
+    border-radius: 20px;
+}
+.out-payment{
+    background-color:  rgba(236, 234, 234, 0.52);
+    padding-bottom: 70px;
+}
+.container{
+    max-width: 1200px ;
+    margin: 0 auto;
+    width: 100%;
+}
+.container h2{
+    font-size: 40px;
+    /*margin-top: 100px;*/
+    color: black;
+    padding-top: 100px;
+}
+.inner-payment{
+    border-radius: 10px;
+    height: 600px;
+    margin: auto;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+.side-left{
+    width: 400px;
+}
+.side-left p{
+   font-size: 18px;
+}
+.side-left img{
+    height: 77px;
+    width: auto;
+    padding-right: 12px;
+}
+.side-right img{
+    height: 460px;
+}
+.payment-wallet{
+    display: flex;
+    align-items: center;
+    width: 175px;
+}
+.button-download{
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+    padding: 0 24px;
+    height: 44px;
+    width: 300px;
+}
+.button-download button{
+    width: 300px;
+    height: 44px;
+    border-radius: 20px;
+    color: white;
+    background-color: black;
+    font-size: 16px;
+}
+.content h3{
+    margin-top: 48px;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 46px;
+}
+.content  p{
+    padding: 24px 0 30px;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 26px;
+}
+.payment-inst{
+    padding-top: 60px;
+}
+.upi{
+    display: flex;
+    align-items: center;
+    width: 200px;
+}
+.postpaid{
+    padding-top: 60px;
+}
+.inner-postpaid{
+    border-radius: 10px;
+    height: 600px;
+    margin: auto;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+.button-learn{
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+    padding: 0 24px;
+    height: 44px;
+    width: 200px;
+}
+.button-learn button{
+    width: 200px;
+    height: 48px;
+    border-radius: 20px;
+    color: white;
+    background-color: blue;
+    font-size: 18px;
+}
+.card{
+    padding-top: 30px;
+}
+.sub-card{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.card-left{
+    background-color: white;
+    width: 40%;
+    border-radius: 10px;
+    padding: 0px 50px;
+}
+.card-right{
+    background-color: white;
+    width: 40%;
+    border-radius: 10px;
+    padding: 0px 50px;
+}
+.hdfc img{
+    width: 200px;
+    margin-bottom: 20px;
+}
+.card-content h3{
+    font-size: 40px;
+    margin-bottom: 20px;
+    line-height: 50px;
+}
+.card-content p{
+    font-size: 20px;
+    font-weight: lighter;
+    margin-bottom: 50px;
+    line-height: 30px;
+}
+.card-content img{
+    height: 200px;
+}
+.sbi img{
+    width: 200px;
+    margin-bottom: 20px;
+    padding-top: 66px;
+}
+.financial{
+    background-color: white;
+    width: 100%;
+}
+.inner-financial{
+    font-size: 50px;
+    padding: 70px;
+    max-width: 1210px;
+    height: 600px; 
+}
+.services{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.left-financial{
+    width: 40%;
+}
+.right-financial{
+    width: 40%;
+}
+.left-financial img{
+    width: 212px;
+    margin-bottom: 60px;
+}
+.left-financial h2{
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    line-height: 40px;
+}
+.left-financial p{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+    margin-bottom: 40px;
+}
+.more-button{
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+    height: 48px;
+    width: 200px; 
+}
+.more-button button{
+    width: 200px;
+    height: 48px;
+    border-radius: 25px;
+    color: white;
+    background-color: rgb(5, 5, 57);
+    font-size: 18px;
+}
+.right-financial img{
+    width: 452px;
+}
+.paytm-money{
+    width: 100%;   
+}
+.inner-money{
+    font-size: 50px;
+    padding: 30px;
+    max-width: 1300px;
+    height: 600px;  
+    background-color: lightskyblue;
+}
+.money{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.left-money{
+    width: 40%;
+}
+.left-money img{
+    width: 600px;
+}
+.right-money{
+    width: 40%;
+}
+.right-money img{
+    height: 54px;
+    margin-bottom: 50px;
+}
+.right-money h2{
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    line-height: 60px;
+}
+.right-money p{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    margin-bottom: 40px;
+}
+.combination{
+    max-width: 1200px ;
+    margin: 0 auto;
+    width: 100%;
+}
+.paytm-slider{
+    margin-top: 100px;
+}
+.money-services{
+    display: flex;
+}
+.pay-money{
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.pay-money img{
+    width: 150px;
+    margin-bottom: 30px;
+}
+.pay-money p{
+    font-size: 15px;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+.pay-money a{
+    text-decoration: none;
+    color: rgb(75, 175, 238);
+    margin-bottom: 10px;
+}
+.service-slider{
+    width: 870px;
+    padding-left: 30px;
+}
+.service-slider ul{
+    display: flex;
+}
+.service-slider li{
+    padding-right: 36px;
+}
+.slider-wrap{
+    border-radius: 10px;
+    background: #00baf2;
+    opacity: .7;
+    padding: 5px 0;
+    text-align: center;
+    width: 155px;
+    height: 220px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.slider-wrap:hover{
+    opacity: 1;
+}
+.img-wrap img{
+    width: 145px;
+    height: 156px;
+    margin-bottom: 10px;
+}
+.img-wrap p{
+    width: 145px;
+    font-size: 17px;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    line-height: 25px;
+}
+.paytm-travel{
+    margin-top: 100px;
+}
+.travel-services{
+    display: flex;
+}
+.pay-travel{
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.pay-travel img{
+    width: 150px;
+    margin-bottom: 40px;
+}
+.pay-travel p{
+    font-size: 15px;
+    line-height: 25px;
+    margin-bottom: 10px;
+}
+.pay-travel a{
+    text-decoration: none;
+    color: rgb(75, 175, 238);
+    margin-bottom: 10px;
+}
+.travel-slider{
+    width: 870px;
+    padding-left: 30px;
+}
+.travel-slider ul{
+    display: flex;
+}
+.travel-slider li{
+    padding-right: 36px;
+}
+.travel-wrap{
+    border-radius: 10px;
+    background: #00baf2;
+    opacity: .7;
+    padding: 20px 10px;
+    width: 140px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+}
+.travel-wrap:hover{
+    opacity: 1;
+}
+.imge-wrap img{
+    width: 70px;
+    height: 70px;
+    margin-bottom: 40px;
+}
+.imge-wrap p{
+    width: 120px;
+    font-size: 17px;
+    color: #fff;
+    font-weight: 700;
+    text-align: left;
+    line-height: 25px;
+    margin-bottom: 10px;
+}
+.imge-wrap span{
+    width: 120px;
+    font-size: 10px;
+    color: #fff;
+    font-weight: 700;
+}
+.footer{
+    width: 100%;
+    background-color: rgba(236, 234, 234, 0.508);
+    margin-top: 100px;
+    height: 100px;
+}
+.contion{
+    max-width: 1200px ;
+    margin: 0 auto;
+    width: 100%;
+}
+.inner-footer{
+    display: flex;
+    align-items: center;
+    height: 100px;
+    justify-content: space-between;
+}
+.sub{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.sub p{
+    width:25%;
+    font-size: 16px;
+    font-weight: 600;
+    padding-right: 20px;
+    line-height: 20px;
+}
+.sub img{
+    padding-left: 10px;
+}
+.icon i{
+    font-size: 25px;
+    color: grey;
+    margin-right: 20px;
+    align-items: center;
+    justify-content: flex-end;
+}
